@@ -1,0 +1,179 @@
+/* Background with Gradient */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* H1 Title Styling */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 77, 77, 0.5);
+    animation: fadeIn 1.2s ease-in-out;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Meme Generator Box */
+.meme-generator {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title Styling */
+.meme-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Meme Image Styling */
+.meme-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.meme-image:hover {
+    transform: scale(1.05);
+}
+
+/* Author Styling */
+.meme-author {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Animated Button */
+.generate-meme-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    animation: pulse 1.5s infinite;
+}
+
+/* Button Hover Effect */
+.generate-meme-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Pulse Animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+}
+/* Meme Container */
+.meme-container {
+    padding: 10px;
+    position: relative;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Meme Image Pop-Up Effect */
+.meme-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* When meme loads, it pops up */
+.meme-image.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Title Styling */
+.meme-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Author Styling */
+.meme-author {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
